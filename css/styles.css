@@ -1,0 +1,53 @@
+body {
+  background-color: gray;
+}
+
+.header {
+  text-align: center;
+  background-color: white;
+  border: 10px solid purple;
+  font-family: Amadgone Font;
+  src: url("https://www.1001fonts.com/amadgone-font.html");
+}
+
+.albums {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.album_image {
+  width: 80%;
+  align-self: center;
+}
+
+.album h2 {
+  text-align: center;
+}
+
+.album_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tracklist {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.tracklist p {
+  text-align: center;
+  font-size: 1.5em;
+}
