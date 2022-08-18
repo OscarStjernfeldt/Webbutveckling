@@ -1,0 +1,25 @@
+body {
+  background: rgb(169, 169, 169);
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: 1.5em auto;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fbf7f0;
+  width: 95%;
+  max-width: 1920px;
+}
+
+.header {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+}
