@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/standard.css">
     <link rel="stylesheet" href="css/login.css">
-    <title>Log in</title>
+    <title>Register</title>
   </head>
   <body>
     <div class="background">
-        <h1>Log in</h1>
+        <h1>Register</h1>
         <form class="login_form">
                 <label class="login_label" for="email">Email</label>
                 <input class="input" type="email" id="email" name="email" placeholder="example@email.com"></input>
                 <label class="login_label" for="password">Password</label>
-                <input class="input" type="password"  name="password" placeholder="Password"></input>
+                <input class="input" type="password"  name="password" placeholder="New password"></input>
+                <input class="input" type="password"  name="password" placeholder="Confirm new password"></input>
                <div class="login_form_buttons">
-                <input class="button" type="submit" name="submit" value="Log in">
-                <button class="button" onclick="moveToRegister()" type="button" value="Register">Register</button>
+                <button class="button" onclick="moveToLogin()" type="button" value="Register">Register</button>
                 <script>
-                    function moveToRegister() {
-                        location.replace("../ReceptHTML/register.html")
+                    function moveToLogin() {
+                        location.replace("../ReceptHTML/login.html")
                     }
                 </script>
                </div>
