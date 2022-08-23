@@ -1,0 +1,122 @@
+<body> Allt som syns på websidan (Skellet) </body>
+<title> titel på hemsidan </title>
+<h(1-6)> Rubriker av olika storlekar, h1 är vanligast. </h(1-6)>
+<p> Paragraf (All text)</p>
+<a> länkar </a>
+<img> bilder </img>
+<div> kan vara vad som helst </div>
+<meta charset="utf-8"> för att välja characters som ska använda (språk)
+<!-- Kommentarer -->
+<link rel="stylesheets" href="styles.css (Referens till en css fil)">
+.header{} för att göra en class för att undvika långa rader och redundans för exempelvis color och font-size
+#header{} för att göra ett id, funkar på samma sätt som class men kan bli lite knas om det används på flera ställen ibland.
+index.html som default.
+
+Lists:
+
+<ul> unordered list </ul>
+<ol> ordered list </ol>
+
+
+htmlcheatsheets.com: (Hemsida med taggar + förklaringar)
+w3schools.com: för tutorial av HTML + CSS med mer.
+validator.w3.org: för att kolla kod som inte funkar
+developer.mozilla.org (Mer info om taggar med mer experimentiella saker)
+icons8.com för gratis icons
+unsplash för gratis fotobilder
+undraw.co för mer gratis bilder
+
+_______________________________________________________________
+
+Tis 23 Aug
+---------------------------------------------------
+
+.js för vanlig javascript
+.ts för typescript (mer som Java)
+
+switch cases har en cache för att det ska finnas kvar i minnet och gå snabbare att gå igenom kontra if satser
+
+---------------------------------------------------
+var test = 1; /* Gammalt sätt som inte bör användas (Globala)*/
+const test2 = 2;/* Är en variabel som inte får ändras */
+let test3 = 3;/* Lokalt deklarering av variable. */
+function myFunction() {
+     alert("Hej");
+ }
+ myFunction();
+ const myFunction2 = (myVariable, myVariable2) => {
+     alert(myVariable + myVariable2);
+ };
+ myFunction2(5, 3);
+ ---------------------------------------------------
+ let test = 3;
+ if (test === 2) {
+     alert("False!");
+ } else if (test === 3) {
+     alert("True!");
+ } else {
+     alert("Something odd happent!");
+ }
+ ---------------------------------------------------
+ let today = new Date();
+ let hourNow = today.getHours();
+ let greeting;
+ if (hourNow > 18) {
+     greeting = "Good evening!";
+ } else if (hourNow > 12) {
+     greeting = "Good afternoon!";
+ } else if (hourNow > 0) {
+     greeting = "Good morning!";
+ } else {
+     greeting = "Welcome!";  
+ }
+ document.write("<h1>" + greeting + "</h1>");
+ ---------------------------------------------------
+ switch (
+    new Date().getDay() //input is current day
+ ) {
+    case 6:
+        text = "Saturday"; //if (day == 6)
+        break;
+    case 0:
+        text = "Sunday"; //if (day == 0)
+        break;
+    default:
+        text="Whatever"; //else...
+ }
+ ---------------------------------------------------
+let array = ["hej", "Hejdå", "hejhej"]
+
+console.log("Min array", array); //Använda , istället för + för lättare debug.
+
+array.map((item) => {
+    console.log(item);
+});
+
+let myVariable = false;
+let myVariable2 = true;
+
+console.log(`The value of a is ${myVariable} and not ${myVariable2}`); //Att föredra istället för + mellan variables.
+
+------------
+object
+------------
+const car =  {
+    type: "Fiat",
+    model: "500",
+    color: "white",
+    drive: function () {
+        return this.type + ", " 0 this.model;
+    },
+};
+
+console.log(car.drive);
+
+---------------------------------------------------
+0 == ""; //true
+1 == "1"; //true
+1 == true; //true
+
+0 === ""; //false
+1 === "1"; //false
+1 === true; //false
