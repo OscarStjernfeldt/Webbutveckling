@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Javascript övning 3</title>
-  </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Javascript exercise 3</title>
+</head>
 
-  <body>
-    <p id="output"></p>
-    <form id="formReg">
-      <p>
+<body>
+<p id="output"></p>
+<form id="formReg">
+    <p>
         <label for="clothes">Item: </label>
         <select name="clothes" id="clothes">
-          <option value="pants">Pants</option>
-          <option value="sweatshirt">Sweatshirt</option>
-          <option value="cap">Cap</option>
-          <option value="underwear">Underwear</option>
-          <option value="socks">Socks</option>
+            <option value="pants">Pants</option>
+            <option value="sweatshirt">Sweatshirt</option>
+            <option value="cap">Cap</option>
+            <option value="underwear">Underwear</option>
+            <option value="socks">Socks</option>
         </select>
-      </p>
-      <p><label>Price of item: </label> <input type="number" id="price" /></p>
-      <p>
-        <label>Amount of items: </label> <input type="number" id="quantity" />
-      </p>
-      <p><input type="submit" value="OK" /></p>
-    </form>
+    </p>
+    <p><label for="price">Price of item: </label> <input type="number" id="price"/> <label> kr</label></p>
+    <p><label for="quantity">Amount of items: </label> <input type="number" id="quantity"/> <label> Qty </label></p>
+    <p><input type="submit" value="Submit"/></p>
+</form>
 
-    <script src="js/javascript-ovn-3.js"></script>
-  </body>
+<script src="js/javascript-ovn-3.js"></script>
+</body>
 </html>

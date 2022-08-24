@@ -1,25 +1,15 @@
-const form: HTMLElement | null = document.querySelector("#formReg");
-const price: HTMLInputElement | null = document.querySelector("#price");
-const quantity: HTMLInputElement | null = document.querySelector("#quantity");
-const output: HTMLElement | null = document.querySelector("#output");
+const form = document.querySelector("#formReg");
+const price = document.querySelector("#price");
+const quantity = document.querySelector("#quantity");
+const output = document.querySelector("#output");
 
-function showPrice(event: SubmitEvent) {
-  // Använd value när man hämtar från input i formuläret
-  let putPrice = price?.value;
+function showSum(event) {
+    event.preventDefault();
 
-  //console.log('Textfält i funktion ' + name);
+    // @ts-ignore
+    let sum = price.value * quantity.value;
 
-  output!!.textContent = "Price of item: " + putPrice + " kr";
-
-  // Submittar inte formuläret
-  event.preventDefault(); //
-}
-function showQuantity(event: SubmitEvent) {
-  let putQuantity = quantity?.value;
-
-  output!!.textContent = "Quantity: " + putQuantity;
-
-  event.preventDefault(); //
+    output.textContent = 'Summary: ' + sum;
 }
 
-form?.addEventListener("submit", showPrice, showQuantity, false);
+form.addEventListener("submit", showSum, false);
