@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vilket väder är det</title>
+</head>
+<body>
+<p id="output"></p>
+<form id="form">
+    <h2>How's the weather today?</h2>
+    <p>
+        <label for="rain">Is it raining?: </label>
+        <input type="checkbox" id="rain" onchange="showWeatherAndCold()"/>
+    </p>
+    <p>
+        <label for="cold">Is it cold?: </label>
+        <input type="checkbox" id="cold" onchange="showWeatherAndCold()"/>
+    </p>
+    <p><input type="submit" value="Submit"/></p>
+</form>
+
+<script src="js/javascript-ovn-6.js"></script>
+</body>
+</html>
