@@ -3,8 +3,7 @@ const rain: HTMLInputElement = document.querySelector("#rain");
 const cold: HTMLInputElement = document.querySelector("#cold");
 const output = document.querySelector("#output");
 
-function showWeatherAndCold(event) {
-    event.preventDefault();
+function showWeatherAndCold() {
 
     let rainingText = rain.checked ? "raining" : "not raining";
     let coldText = cold.checked ? "cold" : "not cold";

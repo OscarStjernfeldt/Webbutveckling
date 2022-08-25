@@ -6,8 +6,8 @@ const output: HTMLParagraphElement = document.querySelector("#output");
 function writeTextAndNum(event) {
     event.preventDefault();
 
-    for (let i = 0; i <= parseInt(number.value); i++) {
-        output.textContent = `${text} ${i}`;
+    for (let i = 0; i < parseInt(number.value); i++) {
+        console.log(`${text.value} ${i+1}`);
     }
 }
 
