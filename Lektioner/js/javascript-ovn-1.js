@@ -1,5 +1,4 @@
-"use strict";
-let studentName = "Oscar";
-let address = "Lars Kaggsgatan 49B";
-let phoneNumber = "0723099042";
+var studentName = "Oscar";
+var address = "Lars Kaggsgatan 49B";
+var phoneNumber = "0723099042";
 console.log(studentName, ", ", address, ", ", phoneNumber);
