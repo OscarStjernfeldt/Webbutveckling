@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <link rel="stylesheet" href="css/standard.css">
     <link rel="stylesheet" href="css/login.css">
     <title>Register</title>
-  </head>
-  <body>
-    <div class="background">
-        <h1>Register</h1>
-        <form class="login_form">
-                <label class="login_label" for="email">Email</label>
-                <input class="input" type="email" id="email" name="email" placeholder="example@email.com"></input>
-                <label class="login_label" for="password">Password</label>
-                <input class="input" type="password"  name="password" placeholder="New password"></input>
-                <input class="input" type="password"  name="password" placeholder="Confirm new password"></input>
-               <div class="login_form_buttons">
-                <button class="button" onclick="moveToLogin()" type="button" value="Register">Register</button>
-                <script>
-                    function moveToLogin() {
-                        location.replace("../ReceptHTML/login.html")
-                    }
-                </script>
-               </div>
-        </form>
-    </div>
-  </body>
+</head>
+<body>
+<div class="background">
+    <h1>Register</h1>
+    <form class="login_form" id="form">
+        <label class="login_label" for="email">Email</label>
+        <input class="input" type="email" id="email" name="email" placeholder="example@email.com" required>
+        <label class="login_label" for="password">Password</label>
+        <input class="input" type="password" id="password" placeholder="New password" min="5"
+               required>
+        <label class="login_label" for="confPassword">Confirm password</label>
+        <input class="input" type="password" id="confPassword" placeholder="Confirm new password" min="5" required>
+        <div class="login_form_buttons">
+            <label>
+                <input class="submit" onclick="strictPassword()" value="login">
+            </label>
+            <script src="js/register.js"></script>
+        </div>
+    </form>
+</div>
+<script src="js/register.js"></script>
+</body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exempel Array list</title>
+</head>
+<body>
+<p id="todoOutput"></p>
+<form id="formNewTodo">
+    <label>Lägg till i Att-göra-listan: </label>
+    <p><input type="text" id="txtNewTodo" placeholder="Lägg till nytt" required="required"> <input type="submit"
+                                                                                                   value="Spara"></p>
+    <p id="formNewOutput"></p>
+</form>
+
+<p>
+    <button id="btnShowTodos">Visa alla</button>
+</p>
+<p>
+    <button id="btnShowTodosSort">Visa alla Sorterat</button>
+</p>
+<p>
+    <button id="btnShowTodosRnd">Slumpa fram en ur listan</button>
+</p>
+<p id="randomOutput"></p>
+
+<form id="formUpdateTodo">
+    <label>Skriv in posten du ska uppdatera i Att-göra-listan: </label>
+    <p><input type="text" id="txtCurrentTodo" placeholder="Skriv in det du ska ändra" required="required"></p>
+    <label>Skriv in det nya namnen på posten i Att-göra-listna: </label>
+    <p><input type="text" id="txtUpdateTodo" placeholder="Skriv in det nya" required="required"></p>
+    <p><input type="submit" value="Uppdatera"></p>
+    <p id="formUpdateOutput"></p>
+</form>
+<script src="js/javascript-ovn.todo.js"></script>
+</body>
+</html>
