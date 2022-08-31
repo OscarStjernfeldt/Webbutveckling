@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
+    <meta charset="UTF-8">
+    <title>Oscar's Laboration1 Webutveckling LOGIN</title>
+</head>
+<body class="main-background">
+<div class="flex-background">
+    <div class="topnav" id="myTopnav">
+        <a href="Laboration1.html" class="active">Home</a>
+        <a href="#search">Search</a>
+        <a href="login.html">Login</a>
+        <div class="dropdown">
+            <button class="dropbtn">Categories
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="meat.html">Meat</a>
+                <a href="chicken.html">Chicken</a>
+                <a href="fish.html">Fish</a>
+                <a href="vegetarian.html">Vegetarian</a>
+                <a href="desert.html">Desert</a>
+                <a href="allergy.html">Allergy</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</div>
+<div class="logo-background">
+    <h1>LOGO</h1>
+</div>
+<div class="home-background">
+    <section>
+        <h1 class="login-header">Login</h1>
+        <div class="center-input-page">
+            <form class="login_form">
+                <label class="login_label" for="email">Email</label>
+                <input class="input" type="email" id="email" minlength="5" required name="email"
+                       placeholder="example@email.com">
+                <label class="login_label" for="password">Password</label>
+                <input class="input" type="password" id="password" minlength="5" required placeholder="Password">
+                <div class="login_form_buttons">
+                    <input class="button" onclick="window.location.href='Laboration1.html'" minlength="5" required
+                           type="button" value="Login">
+                    <button class="button" onclick="window.location.href='register.html'" type="button"
+                            value="Register">
+                        Register
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <footer>
+        <p>Example@email.com</p>
+        <p><img src="./images/icons8-facebook-40.png" alt="facebook icon"></p>
+        <p><img src="./images/icons8-instagram-40.png" alt=""></p>
+    </footer>
+</div>
+
+<script src="js/home.js"></script>
+</body>
+</html>
