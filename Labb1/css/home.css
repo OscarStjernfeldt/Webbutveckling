@@ -1,30 +1,5 @@
-
 * {
-    box-sizing: border-box;
-}
-
-@media screen and (max-width: 1000px) {
-    .column {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .column {
-        width: 100%;
-    }
-}
-
-.background {
-    margin-top: 50px;
-}
-
-.logo-background {
-    text-align: center;
-    padding-top: 15px;
-    background: #3e8e41;
-    height: 100px;
-    color: #ffffff;
+    --border-radius: 10px;
 }
 
 .main-background {
@@ -33,39 +8,34 @@
     min-width: 350px;
 }
 
-.flex-background {
+.content {
+    margin: 0 auto;
     display: flex;
-    background: #333;
+    justify-content: center;
     flex-direction: column;
+    width: 80vw;
 }
 
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 5px 0 5px;
+.background {
+    margin-top: 50px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
-@media screen and (max-width: 1200px) {
-    .column {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
+.logo-background {
+    text-align: center;
+    padding-top: 15px;
+    background: #3e8e41;
+    min-width: 350px;
+    height: 100px;
+    color: #ffffff;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 .topnav {
     overflow: hidden;
     background-color: #333;
+    min-width: 350px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .topnav a {
@@ -135,6 +105,112 @@
     display: block;
 }
 
+.search-bar {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.example input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    background: #f1f1f1;
+    width: 90%;
+    border-radius: var(--border-radius);
+}
+
+.example button {
+    margin: 0 0 0 10px;
+    background: #2196F3;
+    border-radius: 100%;
+    height: 64px;
+    width: 64px;
+    cursor: pointer;
+}
+
+.example button:hover {
+    background: #0b7dda;
+}
+
+.example {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 350px;
+}
+
+.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.recipe-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.food-picture {
+    width: 100%;
+    border-radius: var(--border-radius);
+    max-width: 200px;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.recipe {
+    text-align: center;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    min-width: fit-content;
+    margin-top: 10px;
+    border-radius: var(--border-radius);
+}
+
+.recipe-text {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.recipe-title {
+    margin: 0;
+}
+
+.recipe-text ul {
+    padding: 0;
+    margin: 0 3vw;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+    width: 100%;
+}
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    background: #ffffff;
+    height: 45px;
+    justify-content: space-evenly;
+    border: #000000 solid 2px;
+}
+
+
+
 @media screen and (max-width: 425px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
@@ -178,77 +254,6 @@
     }
 }
 
-.search {
-    margin-top: 10px;
-}
-
-.search-icon {
-    margin: auto;
-}
-
-/* Style the search field */
-form.example input[type=text] {
-    padding: 15px;
-    font-size: 17px;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-}
-
-/* Style the submit button */
-form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-form.example button:hover {
-    background: #0b7dda;
-}
-
-/* Clear floats */
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
-.recipes {
-    display: flex;
-    flex-direction: row;
-    height: 200px;
-    margin-top: 10px;
-}
-
-.recipe-text {
-    width: 150px;
-    height: 200px;
-    text-align: center;
-    background: #ffffff;
-}
-
-.news {
-    display: flex;
-    justify-content: center;
-    background: #ffffff;
-    border-radius: 50px;
-    margin-top: 10px;
-}
-
-footer {
-    margin-top: 10px;
-    display: flex;
-    background: #ffffff;
-    height: 45px;
-    justify-content: space-evenly;
-    border: #000000 solid 2px;
-}
-
-img {
-    margin-top: -15px;
+@media only screen and (min-width: 1280px) {
+    .recipe {}
 }
