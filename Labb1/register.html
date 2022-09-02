@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/login.css">
     <meta charset="UTF-8">
-    <title>Oscar's Laboration1 Webutveckling LOGIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar's Laboration1 Webutveckling HOMEPAGE</title>
 </head>
 <body class="main-background">
-<div class="flex-background">
+<div class="content">
     <div class="topnav" id="myTopnav">
         <a href="Laboration1.html" class="active">Home</a>
         <a href="#search">Search</a>
@@ -27,41 +28,42 @@
         </div>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-</div>
-<div class="logo-background">
-    <h1>LOGO</h1>
-</div>
-<div class="home-background">
-    <section>
-        <h1 class="login-header">Register</h1>
-        <div class="center-input-page">
-            <form class="login_form" id="form">
-                <label class="login_label" for="email">Email</label>
-                <input class="input" type="email" id="email" name="email" placeholder="example@email.com" required>
-                <label class="login_label" for="password">Password</label>
-                <input class="input" type="password" id="password" placeholder="New password" min="5"
-                       required>
-                <label class="login_label" for="confPassword">Confirm password</label>
-                <input class="input" type="password" id="confPassword" placeholder="Confirm new password" min="5"
-                       required>
-                <div class="login_form_buttons">
-                    <button class="button" onclick="window.location.href='login.html'" type="button"
-                            value="Register">
-                        Register
-                    </button>
-                </div>
-            </form>
 
-        </div>
+    <div class="logo-background">
+        <h1>LOGO</h1>
+    </div>
+    <div class="home-background">
+        <section>
+            <h1 class="login-header">Register</h1>
+            <div class="center-input-page">
+                <form class="login_form" id="form">
+                    <label class="login_label" for="email">Email</label>
+                    <input class="input" type="email" id="email" name="email" placeholder="example@email.com" required>
+                    <label class="login_label" for="password">Password</label>
+                    <input class="input" type="password" id="password" placeholder="New password" min="5"
+                           required>
+                    <label class="login_label" for="confPassword">Confirm password</label>
+                    <input class="input" type="password" id="confPassword" placeholder="Confirm new password" min="5"
+                           required>
+                    <div class="login_form_buttons">
+                        <button class="button" onclick="window.location.href='login.html'" type="button"
+                                value="Register">
+                            Register
+                        </button>
+                    </div>
+                </form>
+
+            </div>
 
 
-    </section>
-    <footer>
-        <p>Example@email.com</p>
-        <p><img src="./images/icons8-facebook-40.png" alt="facebook icon"></p>
-        <p><img src="./images/icons8-instagram-40.png" alt=""></p>
-    </footer>
-</div>
+        </section>
+        <footer>
+            <p>Example@email.com</p>
+            <img src="./images/icons8-twitter-40.png" alt="twitter icon">
+            <img src="./images/icons8-facebook-40.png" alt="facebook icon">
+            <img src="./images/icons8-instagram-40.png" alt="instagram icon">
+        </footer>
+    </div>
 
 <script src="js/home.js"></script>
 </body>

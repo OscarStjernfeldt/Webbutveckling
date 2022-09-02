@@ -6,3 +6,12 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function getJsonData() {
+    fetch("./json/greeting.json")
+        .then((response) => response.json())
+        .then((data) => {
+            alert(data.greeting)
+            console.log("more code")
+        });
+}

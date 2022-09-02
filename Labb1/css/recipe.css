@@ -1,0 +1,53 @@
+* {
+    --border-radius: 10px;
+}
+
+.info-background {
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: var(--border-radius);
+    width: auto;
+    min-width: 350px;
+    margin-top: 10px;
+}
+
+.info-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.recipe-title {
+    font-size: xxx-large;
+}
+
+.burger-image {
+    width: 50%;
+    border-radius: var(--border-radius);
+}
+
+.info-text {
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 425px) {
+    .info.background {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .burger-image {
+        width: 100%;
+    }
+
+    .info-location {
+        width: 100%;
+    }
+}

@@ -6,8 +6,7 @@ function cToF(event) {
     event.preventDefault();
 
     let cToFahr = parseInt(celsius.value) * 9 / 5 + 32;
-    output.textContent = cToFahr + ' \xB0F.';
-
+    alert(output.textContent = cToFahr + ' \xB0F.');
 }
 
 form.addEventListener("submit", cToF, false);

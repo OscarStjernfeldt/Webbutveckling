@@ -5,9 +5,9 @@
     text-shadow: -3px -3px 0 var(--shadow-color), 3px -3px 0 var(--shadow-color),
     -3px 3px 0 var(--shadow-color), 3px 3px 0 var(--shadow-color);
     color: #000000;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: var(--border-radius);
     border: #000000 solid 3px;
-    background: #fbf7f0;
+    background: #F8E3E2;
     padding: 20px;
 
 }
@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     padding: 2em;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: var(--border-radius);
     border: #000000 solid 3px;
     width: 80%;
     margin-top: 2em;
@@ -41,14 +41,14 @@
     padding: 7px;
 }
 
-.button {
-    width: 40%;
-    height: 200%;
-}
-
 .input {
     height: 50px;
     font-size: 1em;
     padding-left: 10px;
     margin: 0.5%;
+}
+
+.button {
+    width: 40%;
+    height: 200%;
 }

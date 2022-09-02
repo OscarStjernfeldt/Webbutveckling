@@ -2,17 +2,11 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/meat.css">
-    <link rel="stylesheet" href="css/chicken.css">
-    <link rel="stylesheet" href="css/fish.css">
-    <link rel="stylesheet" href="css/vegetarian.css">
-    <link rel="stylesheet" href="css/desert.css">
-    <link rel="stylesheet" href="css/allergy.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oscar's Laboration1 Webutveckling HOMEPAGE</title>
 </head>
-<body class="main-background">
+<body class="main-background" onload="getJsonData()">
 <div class="content">
     <div class="topnav" id="myTopnav">
         <a href="Laboration1.html" class="active">Home</a>
@@ -52,9 +46,30 @@
             </h2>
         </div>
         <section class="recipes">
+            <a href="./recipe.html">
+                <article class="recipe">
+                    <div class="recipe-text">
+                        <h3 class="recipe-title">Borgir</h3>
+                        <ul>
+                            <li>Ingredient</li>
+                            <li>Ingredient</li>
+                            <li>Ingredient</li>
+                            <li>Ingredient</li>
+                            <li>Ingredient</li>
+                            <li>Ingredient</li>
+                            <li>Ingredient</li>
+                        </ul>
+                    </div>
+                    <img class="food-picture"
+                         src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
+                         alt="burger image">
+                </article>
+            </a>
+
+
             <article class="recipe">
                 <div class="recipe-text">
-                    <h3 class="recipe-title">Borgir</h3>
+                    <h3 class="recipe-title">Chicken</h3>
                     <ul>
                         <li>Ingredient</li>
                         <li>Ingredient</li>
@@ -66,13 +81,13 @@
                     </ul>
                 </div>
                 <img class="food-picture"
-                     src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
+                     src="https://images.unsplash.com/photo-1615557960916-5f4791effe9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hpY2tlbiUyMGRpbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                      alt="burger image">
             </article>
 
             <article class="recipe">
                 <div class="recipe-text">
-                    <h3 class="recipe-title">Borgir</h3>
+                    <h3 class="recipe-title">Fish</h3>
                     <ul>
                         <li>Ingredient</li>
                         <li>Ingredient</li>
@@ -84,13 +99,13 @@
                     </ul>
                 </div>
                 <img class="food-picture"
-                     src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
+                     src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmlzaCUyMGRpbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                      alt="burger image">
             </article>
 
             <article class="recipe">
                 <div class="recipe-text">
-                    <h3 class="recipe-title">Borgir</h3>
+                    <h3 class="recipe-title">Vegetarian</h3>
                     <ul>
                         <li>Ingredient</li>
                         <li>Ingredient</li>
@@ -102,13 +117,13 @@
                     </ul>
                 </div>
                 <img class="food-picture"
-                     src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
+                     src="https://images.unsplash.com/photo-1609611180481-d8fe3e7e256a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
                      alt="burger image">
             </article>
 
             <article class="recipe">
                 <div class="recipe-text">
-                    <h3 class="recipe-title">Borgir</h3>
+                    <h3 class="recipe-title">Desert</h3>
                     <ul>
                         <li>Ingredient</li>
                         <li>Ingredient</li>
@@ -120,13 +135,13 @@
                     </ul>
                 </div>
                 <img class="food-picture"
-                     src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
+                     src="https://images.unsplash.com/photo-1448131063153-f1e240f98a72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGRlc2VydCUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                      alt="burger image">
             </article>
 
             <article class="recipe">
                 <div class="recipe-text">
-                    <h3 class="recipe-title">Borgir</h3>
+                    <h3 class="recipe-title">Allergy</h3>
                     <ul>
                         <li>Ingredient</li>
                         <li>Ingredient</li>
@@ -138,32 +153,15 @@
                     </ul>
                 </div>
                 <img class="food-picture"
-                     src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
-                     alt="burger image">
-            </article>
-
-            <article class="recipe">
-                <div class="recipe-text">
-                    <h3 class="recipe-title">Borgir</h3>
-                    <ul>
-                        <li>Ingredient</li>
-                        <li>Ingredient</li>
-                        <li>Ingredient</li>
-                        <li>Ingredient</li>
-                        <li>Ingredient</li>
-                        <li>Ingredient</li>
-                        <li>Ingredient</li>
-                    </ul>
-                </div>
-                <img class="food-picture"
-                     src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
+                     src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1094&q=80"
                      alt="burger image">
             </article>
         </section>
         <footer>
             <p>Example@email.com</p>
-            <p><img src="./images/icons8-facebook-40.png" alt="facebook icon"></p>
-            <p><img src="./images/icons8-instagram-40.png" alt=""></p>
+            <img src="./images/icons8-twitter-40.png" alt="twitter icon">
+            <img src="./images/icons8-facebook-40.png" alt="facebook icon">
+            <img src="./images/icons8-instagram-40.png" alt="instagram icon">
         </footer>
     </div>
 </div>

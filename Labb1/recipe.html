@@ -2,13 +2,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/recipe.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar's Laboration1 Webutveckling HOMEPAGE</title>
+    <title>Recipe</title>
 </head>
 <body class="main-background">
-<p id="output"></p>
 <div class="content">
     <div class="topnav" id="myTopnav">
         <a href="Laboration1.html" class="active">Home</a>
@@ -34,27 +33,22 @@
         <h1>LOGO</h1>
     </div>
     <div class="home-background">
-        <section>
-            <h1 class="login-header">Login</h1>
-            <div class="center-input-page">
-                <form class="login_form" id="form">
-                    <label class="login_label" for="email">Email</label>
-                    <input class="input" type="email" id="email" name="email"
-                           placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                           minlength="5" required>
-                    <label class="login_label" for="password">Password</label>
-                    <input class="input" type="password" id="password" placeholder="Password"
-                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
-                    <div class="login_form_buttons">
-                        <input class="button" onclick="alertMessage()" type="submit"
-                               value="Login">
-                        <button class="button" onclick="window.location.href='register.html'" type="button"
-                                value="Register">
-                            Register
-                        </button>
-                    </div>
-                </form>
-            </div>
+        <section class="info-background">
+            <article class="info-location">
+                <h1 class="recipe-title">Borgir</h1>
+                <ul class="info-text">
+                    <li>Ingredient</li>
+                    <li>Ingredient</li>
+                    <li>Ingredient</li>
+                    <li>Ingredient</li>
+                    <li>Ingredient</li>
+                    <li>Ingredient</li>
+                    <li>Ingredient</li>
+                </ul>
+            </article>
+            <img class="burger-image"
+                 src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
+                 alt="burger image" width="50%">
 
 
         </section>
@@ -67,6 +61,5 @@
     </div>
 </div>
 <script src="js/home.js"></script>
-<script src="js/login.js"></script>
 </body>
 </html>
