@@ -41,10 +41,12 @@
                     <label class="login_label" for="email">Email</label>
                     <input class="input" type="email" id="email" name="email"
                            placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                           minlength="5" required>
+                           minlength="5" title="Must contain a valid email" required>
                     <label class="login_label" for="password">Password</label>
                     <input class="input" type="password" id="password" placeholder="Password"
-                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8"
+                           title="Password must contain one uppercase, one lowercase and one number with minimum of eight cases"
+                           required>
                     <div class="login_form_buttons">
                         <input class="button" onclick="alertMessage()" type="submit"
                                value="Login">
