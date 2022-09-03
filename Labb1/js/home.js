@@ -6,7 +6,6 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
 function getJsonData() {
     fetch("./json/greeting.json")
         .then(function (response) {

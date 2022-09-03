@@ -22,7 +22,7 @@ h1 h2 h3 {
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #781C68;
     min-width: 350px;
     border: black solid 1px;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -39,7 +39,7 @@ h1 h2 h3 {
 }
 
 .active {
-    background-color: #04AA6D;
+    background-color: #319DA0;
     color: white;
 }
 
@@ -98,7 +98,7 @@ h1 h2 h3 {
 .logo-background {
     text-align: center;
     padding-top: 15px;
-    background: #F8E3E2;
+    background: #FFF5E1;
     min-width: 350px;
     height: 100px;
     color: #000000;
@@ -122,7 +122,7 @@ h1 h2 h3 {
 
 .example button {
     margin: 0 0 0 10px;
-    background: #2196F3;
+    background: #319DA0;
     border-radius: 100%;
     height: 64px;
     width: 64px;
@@ -130,7 +130,7 @@ h1 h2 h3 {
 }
 
 .example button:hover {
-    background: #0b7dda;
+    background: #FFD39A;
 }
 
 .example {
@@ -150,7 +150,7 @@ h1 h2 h3 {
 .news {
     display: flex;
     justify-content: center;
-    background: #F8E3E2;
+    background: #FFF5E1;
     border-radius: var(--border-radius);
     margin-top: 10px;
     width: 100%;
@@ -203,7 +203,7 @@ h1 h2 h3 {
 footer {
     margin-top: 10px;
     display: flex;
-    background: #F8E3E2;
+    background: #FFF5E1;
     height: 45px;
     justify-content: space-evenly;
     border: #000000 solid 2px;
